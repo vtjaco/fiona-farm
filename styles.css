@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff;
+    --font-body: 'Habibi', serif;
+    --font-heading: 'Irish Grover', cursive;
+}
+body {
+   font-family: var(--font-body);
+    color: var(--black);
+    background-color: var(--white);
+    line-height: 1.6;
+    padding: 1em;
+}
+header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 2em 0;
+}
+h1 {
+    font-size: 2.5em;
+    font-family: var(--font-heading);
+    margin-bottom: 0.5em;
+}
+h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--black); 
+}
+h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+h3 {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+
+.navbar {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5em;
+    font-family: var(--font-heading);
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.navbar-left {
+    text-align: left;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar p {
+    margin: 5px 0 20px;
+    font-size: 14px;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar button {
+    background-color: #E75D02;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navbar button:hover {
+    background-color: #FF6347;
+}
+
+.sale-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+figure {
+    text-align: center;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+figcaption {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px 20px;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.footer .footer-section {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.footer .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #eaeaea;
+}
+
+
+.footer .top-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer .top-button:hover {
+    background-color: #FF6347;
+}
+
+
+@media (min-width: 428px) {
+    body {
+        padding: 2em;
+    }
+
+    .sale-items {
+        gap: 1.5em;
+    }
+
+    figure {
+        width: 180px;
+    }
+}
+
+@media (min-width: 834px) {
+    .sale-items {
+        gap: 2em;
+    }
+
+    figure {
+        width: 200px;
+    }
+
+    nav ul {
+        gap: 2em;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sale-items {
+        gap: 2.5em;
+    }
+
+    figure {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sale-items {
+        justify-content: space-between;
+    }
+
+    figure {
+        width: 250px;
+    }
+}
+
+.top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF7F50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.top-button:hover {
+  background-color: #FF6347;
+}
